@@ -1,9 +1,10 @@
 import './App.css';
+import Pokecard from './Pokecard';
 
 function App() {
   return (
-    <div className='App App-header'>
-      <h1>pokedex</h1>
+    <div className='App'>
+      <Pokecard id={4} name='Charmander' type='fire' experience={62} />
     </div>
   );
 }
