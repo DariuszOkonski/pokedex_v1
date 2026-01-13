@@ -3,9 +3,11 @@ import './Pokecard.css';
 
 const POKE_API = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/`;
 
+const padToThree = (num) => String(num).padStart(3, '0');
+
 class Pokecard extends Component {
   render() {
-    let imgSrc = `${POKE_API}${this.props.id}.png`;
+    let imgSrc = `${POKE_API}${padToThree(this.props.id)}.png`;
 
     return (
       <div className='Pokecard'>
